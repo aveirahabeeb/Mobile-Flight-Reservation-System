@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin_login"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="380dp"
+                android:layout_height="130dp"
+                android:paddingLeft="30dp"
+                android:layout_marginTop="110dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/txtLogin"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="30dp"
+                    android:gravity="left"
+                    android:text="Login"
+                    android:textColorHighlight="#00613232"
+                    android:textSize="40sp"
+                    android:textStyle="bold"
+                    app:fontFamily="sans-serif" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:textColorHighlight="#00613232"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:fontFamily="sans-serif"
+                    android:text=" Secure login to frs"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="380dp"
+                android:layout_height="300dp"
+                android:paddingLeft="30dp"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="350dp"
+                    android:layout_height="20dp"
+                    android:text="Email Address"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:fontFamily="sans-serif" />
+                <EditText
+                    android:id="@+id/txtAdminEmailaddress"
+                    android:layout_width="350dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:background="@drawable/border"
+                    android:hint="Example@gmail.com"
+                    android:inputType="textEmailAddress" />
+
+                <TextView
+                    android:layout_width="350dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Password"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:fontFamily="sans-serif" />
+                <EditText
+                    android:id="@+id/txtAdminPassword"
+                    android:layout_width="350dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:background="@drawable/border"
+                    android:hint="xxxxxx"
+                    android:inputType="textPassword" />
+
+
+                <Button
+                    android:id="@+id/btnAdminLogin"
+                    android:layout_width="240dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/border"
+                    android:text="Login" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

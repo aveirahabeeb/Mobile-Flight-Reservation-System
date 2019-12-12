@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".add_flight"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="380dp"
+                android:layout_height="57dp"
+                android:paddingLeft="30dp"
+                android:layout_marginTop="33dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="350dp"
+                    android:layout_height="50dp"
+                    android:gravity="left"
+                    android:text="Flight Information"
+                    android:textColorHighlight="#00613232"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:fontFamily="sans-serif" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="380dp"
+                android:layout_height="700dp"
+                android:layout_marginTop="2dp"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="350dp"
+                    android:layout_height="20dp"
+                    android:text="Flight Id"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:fontFamily="sans-serif" />
+
+                <EditText
+                    android:id="@+id/txtFlightId"
+                    android:layout_width="350dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/border"
+                    android:hint="Flight Id"
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="350dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Flight Name"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:fontFamily="sans-serif" />
+
+                <EditText
+                    android:id="@+id/txtFlightName"
+                    android:layout_width="350dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/border"
+                    android:hint="Flight Name"
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+                    android:textSize="14sp" />
+
+
+
+                <LinearLayout
+                    android:layout_width="360dp"
+                    android:layout_height="24dp"
+                    android:paddingLeft="8dp"
+                    android:layout_marginTop="7dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="20dp"
+                        android:text="Source "
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:fontFamily="sans-serif" />
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:text="Destination"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:fontFamily="sans-serif" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="370dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="13dp">
+
+
+                    <Spinner
+                        android:id="@+id/spinnerSource"
+                        android:layout_width="160dp"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/spinner_background"
+                        android:spinnerMode="dialog" />
+
+
+                    <Spinner
+                        android:id="@+id/spinnerDestination"
+                        android:layout_width="175dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="9dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/spinner_background"
+                        android:spinnerMode="dialog" />
+
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="350dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Available Seats"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:fontFamily="sans-serif" />
+
+                <LinearLayout
+                    android:layout_width="380dp"
+                    android:layout_height="43dp"
+                    android:paddingLeft="14dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/txtAvailableSeats"
+                        android:layout_width="250dp"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/border"
+                        android:hint="Available Seats"
+                        android:inputType="none"
+                        android:paddingLeft="10dp"
+                        android:text="1"
+                        android:textSize="14sp" />
+                    <NumberPicker
+                        android:id="@+id/numberPicker"
+                        android:layout_width="50dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginTop="4dp"/>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="350dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Price"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:fontFamily="sans-serif" />
+
+                <EditText
+                    android:id="@+id/txtPrice"
+                    android:layout_width="350dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/border"
+                    android:hint="Price"
+                    android:inputType="number"
+                    android:paddingLeft="10dp"
+                    android:textSize="14sp" />
+
+
+                <TextView
+                    android:layout_width="350dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="4dp"
+                    android:text="Takeoff Date"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:fontFamily="sans-serif" />
+
+                <LinearLayout
+                    android:layout_width="380dp"
+                    android:layout_height="50dp"
+                    android:paddingLeft="14dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/txtTakeoffDate"
+                        android:layout_width="250dp"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/border"
+                        android:hint="MM DD, YYYY"
+                        android:inputType="phone"
+                        android:paddingLeft="10dp"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/btnTakeoffDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="37dp"
+                        android:text="Choose date"
+                        android:layout_marginLeft="4dp"
+                        android:textAllCaps="false"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="380dp"
+                    android:layout_height="24dp"
+                    android:paddingLeft="20dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="20dp"
+                        android:text="Departure Time "
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:fontFamily="sans-serif" />
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="23dp"
+                        android:text="Arrival Time"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:fontFamily="sans-serif" />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="380dp"
+                    android:layout_height="46dp"
+                    android:paddingLeft="14dp"
+                    android:orientation="horizontal">
+
+
+                    <EditText
+                        android:id="@+id/txtDepartureTime"
+                        android:layout_width="160dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="4dp"
+                        android:background="@drawable/border"
+                        android:hint="Departure Time"
+                        android:inputType="text"
+                        android:paddingLeft="10dp"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/txtArrivalTime"
+                        android:layout_width="170dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="9dp"
+                        android:background="@drawable/border"
+                        android:hint="Arrival Time"
+                        android:inputType="text"
+                        android:paddingLeft="10dp"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/btnSaveFlight"
+                    android:layout_width="218dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Save Flight"
+                    />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".browse_flight">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+
+            <LinearLayout
+                android:layout_width="360dp"
+                android:layout_height="24dp"
+                android:paddingLeft="15dp"
+                android:layout_marginTop="27dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="20dp"
+                    android:text="Source "
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:fontFamily="sans-serif" />
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="20dp"
+                    android:paddingLeft="35dp"
+                    android:text="Destination"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:fontFamily="sans-serif" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="400dp"
+                android:layout_height="46dp"
+                android:orientation="horizontal"
+                android:paddingLeft="13dp">
+
+
+                <Spinner
+                    android:id="@+id/search_spinnerSource"
+                    android:layout_width="150dp"
+                    android:layout_height="29dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/spinner_background"
+                    android:spinnerMode="dialog" />
+
+
+                <Spinner
+                    android:id="@+id/search_spinnerDestination"
+                    android:layout_width="150dp"
+                    android:layout_height="29dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/spinner_background"
+                    android:spinnerMode="dialog" />
+
+                <Button
+                    android:id="@+id/btnflightSearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="46dp"
+                    android:text="Search"
+                    android:layout_marginLeft="2dp"
+                    android:textAllCaps="false"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="270dp"
+                android:layout_height="44dp"
+                android:paddingLeft="14dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/txtsearch_TakeoffDate"
+                    android:layout_width="140dp"
+                    android:layout_height="29dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/border"
+                    android:hint="MM DD, YYYY"
+                    android:inputType="none"
+                    android:paddingLeft="10dp"
+                    android:textSize="14sp" />
+                <Button
+                    android:id="@+id/btn_choose_TakeoffDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="37dp"
+                    android:text="Choose date"
+                    android:layout_marginLeft="4dp"
+                    android:textAllCaps="false"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/SearchRecylerView"
+                android:layout_width="match_parent"
+                android:layout_height="580dp"
+                android:paddingLeft="15dp"
+                android:layout_margin="5dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

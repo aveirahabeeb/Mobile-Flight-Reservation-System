@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.flightreservationsystem">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/frsicon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/frsicon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+
+        <activity android:name=".SplashScreen"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+
+        </activity>
+
+        <activity android:name=".reserved_flight"
+            android:label="All Reserved Flight"
+            android:parentActivityName=".admin_menu">
+
+
+        </activity>
+
+        <activity
+            android:name=".book_flight_main"
+            android:label="Book Flight"
+            android:parentActivityName=".book_flight"></activity>
+        <activity
+            android:name=".remove_flight"
+            android:label="Remove Flight"
+            android:parentActivityName=".admin_menu" />
+        <activity
+            android:name=".browse_flight"
+            android:label="Browse Flight"
+            android:parentActivityName=".user_menu"></activity>
+        <activity
+            android:name=".book_flight"
+            android:label="Book Flight"
+            android:parentActivityName=".user_menu">
+
+
+        </activity>
+        <activity
+            android:name=".add_flight"
+            android:label="Add Flight"
+            android:parentActivityName=".admin_menu">
+
+
+
+        </activity>
+        <activity
+            android:name=".user_menu"
+            android:label="Customer Menu">
+
+        </activity>
+        <activity
+            android:name=".admin_menu"
+            android:label="Admin Menu"
+            android:parentActivityName=".admin_login" />
+        <activity
+            android:name=".user_login"
+            android:label="Customer Login"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".user_register"
+            android:label="Customer Register"
+            android:parentActivityName=".user_login">
+
+
+        </activity>
+
+        <activity
+            android:name=".admin_login"
+            android:label="Admin Login"
+            android:parentActivityName=".MainActivity">
+
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        </activity>
+    </application>
+
+</manifest>

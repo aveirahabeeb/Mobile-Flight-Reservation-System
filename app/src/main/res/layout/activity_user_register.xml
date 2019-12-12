@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin_login"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="380dp"
+                android:layout_height="96dp"
+                android:paddingLeft="30dp"
+                android:layout_marginTop="33dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="350dp"
+                    android:layout_height="50dp"
+                    android:gravity="left"
+                    android:text="Create Account"
+                    android:textColorHighlight="#00613232"
+                    android:textSize="36sp"
+                    android:textStyle="bold"
+                    app:fontFamily="sans-serif" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:textColorHighlight="#00613232"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:fontFamily="sans-serif"
+                    android:text=" Create secure account on frs"/>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="380dp"
+                android:layout_height="640dp"
+                android:paddingLeft="30dp"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="350dp"
+                    android:layout_height="20dp"
+                    android:text="Email Address"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:fontFamily="sans-serif" />
+
+                <EditText
+                    android:id="@+id/txtUserEmailaddress"
+                    android:layout_width="350dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/border"
+                    android:hint="Example@gmail.com"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="10dp"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="350dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Password"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:fontFamily="sans-serif" />
+
+                <EditText
+                    android:id="@+id/txtUserPassword"
+                    android:layout_width="350dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/border"
+                    android:hint="xxxxxx"
+                    android:inputType="textPassword"
+                    android:paddingLeft="10dp"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="350dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Full Name"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:fontFamily="sans-serif" />
+
+                <EditText
+                    android:id="@+id/txtFullName"
+                    android:layout_width="350dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/border"
+                    android:hint="Full Name"
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="350dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Address"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:fontFamily="sans-serif" />
+
+                <EditText
+                    android:id="@+id/txtAddress"
+                    android:layout_width="350dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/border"
+                    android:hint="Home Address"
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="350dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Country"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:fontFamily="sans-serif" />
+
+                <Spinner
+                    android:id="@+id/spinnerCountry"
+                    android:layout_width="350dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/spinner_background"
+                    android:spinnerMode="dialog" />
+
+                <TextView
+                    android:layout_width="350dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Phone Number"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:fontFamily="sans-serif" />
+
+                <EditText
+                    android:id="@+id/txtPhoneNumber"
+                    android:layout_width="350dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/border"
+                    android:hint="Phone Number"
+                    android:inputType="phone"
+                    android:paddingLeft="10dp"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/btnRegister"
+                    android:layout_width="220dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/border"
+                    android:layout_marginTop="20dp"
+                    android:text="Register"
+                    />
+                <TextView
+                    android:id="@+id/txtlogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="9dp"
+                    android:gravity="left"
+                    android:textColorHighlight="#00613232"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:fontFamily="sans-serif"
+                    android:text=" Already have an Account? Login"/>
+
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

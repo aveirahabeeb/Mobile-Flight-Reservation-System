@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin_menu"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:background="#00962222"
+            android:text="Admin"
+            android:textColor="#332C2C"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:fontFamily="sans-serif" />
+        <TextView
+            android:layout_width="290dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/airplane"
+            android:gravity="center" />
+
+
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="104dp"
+        android:layout_marginTop="70dp"
+        android:paddingLeft="30dp"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/btnAddFlight"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="4dp"
+            android:background="@drawable/admin_border"
+            android:drawableTop="@drawable/ic_lock_airplane_mode_off"
+            android:paddingTop="4dp"
+            android:text="ADD FLIGHT"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnRemoveFlight"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="4dp"
+            android:background="@drawable/admin_border"
+            android:drawableTop="@drawable/ic_cab_done_holo"
+            android:paddingTop="21dp"
+            android:text="REMOVE FLIGHT"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnreservedflight"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:background="@drawable/admin_border"
+        android:drawableTop="@drawable/ic_lock_airplane_mode"
+        android:text="RESERVED FLIGHT"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
